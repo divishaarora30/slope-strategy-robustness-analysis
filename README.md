@@ -16,12 +16,12 @@ This project implements a quantitative trading strategy based on the slope behav
 
 ## Backtest Results
 
-| Metric     | RELINFRA | RPOWER |
-|-----------|----------|--------|
-| Return    | (fill)   | (fill) |
-| Sharpe    | (fill)   | (fill) |
-| Max DD    | (fill)   | (fill) |
-| Calmar    | (fill)   | (fill) |
+| Metric    | RELINFRA | RPOWER  |
+|-----------|----------|---------|
+| Return    | 166.34%  | 62.87%  |
+| Sharpe    | 1.41     | 0.57    |
+| Max DD    | -30.87%  | -59.72% |
+| Calmar    | 1.86     | 0.36    |
 
 The strategy demonstrates strong performance on RELINFRA but fails to generalize effectively to RPOWER under identical parameter settings, indicating sensitivity to asset-specific dynamics.
 
@@ -55,15 +55,10 @@ The strategy was evaluated under multiple stress scenarios to assess robustness:
 
 ## How to Run
 
-From the main project folder:
+1. Download or clone this repository.
 
-```bash
+2. Open a terminal inside the project folder.
+
+3. Run the following command:
+
 python src/comparison.py
-
-Tech Stack
-
-Python
-
-NumPy
-
-Pandas
